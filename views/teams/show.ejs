@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <header>
+    <h1>Show Page for <%= team.name %></h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/teams">Teams Index</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Team Attributes</h2>
+      <ul>
+        <li>Name: <%= team.name %></li>
+        <form action="/teams/<%=team.id%>?_method=DELETE" method="POST">
+          <button>Delete Team</button>
+        </form>
+      </ul>
+    </section>
+    <section>
+      <a href="/teams/<%=team.id%>/edit">Edit</a>
+    </section>
+  </main>
+
+</body>
+</html>

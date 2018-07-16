@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <h1>Edit Player's Info</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/players">Players Index</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>player Attributes:</h2>
+      <form action="/players/<%=article.id%>?_method=PUT" method="POST">
+        <input type="text" name="name" value="<%=player.name%>"/><br/>
+        <textarea name="playerInfo"></textarea><br/>
+        <input type="submit" value="Update Player"/>
+      </form>
+    </main>
+  </body>
+</html>

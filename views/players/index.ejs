@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <header>
+    <h1>Players</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+           </li>
+        <li>
+         <a href="/players/new">Create New Player</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>List of Players</h2>
+    <ul>
+       <% for(let i = 0; i < players.length; i++) { %>
+        <li><a href="/players/<%=players[i].id%>"><%=players[i].title%></a></li>
+     <% } %>
+    </ul>
+  </main>
+
+</body>
+</html>
