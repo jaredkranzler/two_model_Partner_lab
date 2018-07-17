@@ -20,7 +20,7 @@
     </header>
     <main>
       <h2>player Attributes:</h2>
-      <form action="/players/<%=article.id%>?_method=PUT" method="POST">
+      <form action="/players/<%=player.id%>?_method=PUT" method="POST">
         <input type="text" name="name" value="<%=player.name%>"/><br/>
         <textarea name="playerInfo"></textarea><br/>
         <input type="submit" value="Update Player"/>

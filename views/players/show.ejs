@@ -20,14 +20,14 @@
     </header>
     <main>
       <section>
-        <!-- <-- Put body of article Here -> -->
+        <!-- <-- Put body of player Here -> -->
         <p> <%= player.playerInfo %></p>
         <a href="/players/<%=player.id%>/edit">Edit</a>
       </section>
       
       <section>
   <!--        <-- Set Up delete form here -> -->
-        <form action="/players/<%=article.id%>?_method=DELETE" method="POST">
+        <form action="/players/<%=player.id%>?_method=DELETE" method="POST">
         <input type="submit" value="Delete Player"/>
         </form>
       </section>
