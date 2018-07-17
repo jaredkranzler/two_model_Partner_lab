@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Team = require('../models/team')
-
+const Player = require('../models/player');
 // INDEX
 router.get('/', (req, res) => {
   console.log('got to here')

@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 const Player = require('../models/player');
-
+const Team = require('../models/team')
 
 
 
@@ -16,6 +16,7 @@ router.get('/', (req, res) => {
     });
   });
 });
+
 
 // NEW
 router.get('/new', (req, res) => {
@@ -56,7 +57,7 @@ router.put('/:id', (req, res) => {
 
 
 
-// POST
+// CREATE
 router.post('/', (req, res) => {
   console.log(req.body)
   Player.create(req.body, (err, createdPlayer) => {
